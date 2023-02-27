@@ -11,7 +11,7 @@ https://companion-ruby.vercel.app/
 
 It is recommended using our OpenAI command-line interface (CLI). To install this, run
 
-pip install --upgrade openai
+`pip install --upgrade openai`
 
 (The following instructions work for version 0.9.4 and up. Additionally, the OpenAI CLI requires python 3.)
 
@@ -21,7 +21,7 @@ Set your OPENAI_API_KEY environment variable by adding the following line into y
 
 Tool which validates, gives suggestions and reformats your data:
 
-openai tools fine_tunes.prepare_data -f <LOCAL_FILE>
+`openai tools fine_tunes.prepare_data -f <LOCAL_FILE>`
 
 This tool accepts different formats, with the only requirement that they contain a prompt and a completion column/key. You can pass a CSV, TSV, XLSX, JSON or JSONL file, and it will save the output into a JSONL file ready for fine-tuning, after guiding you through the process of suggested changes.
 
